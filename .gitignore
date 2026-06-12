@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+npm-debug.log*
+.env
+.vscode/
+
+# Local dev context — kept out of the published repo on purpose:
+#  - references/ holds obbyircd's own (GPL) source + specs, copied in for context
+#  - CLAUDE.md / .claude/ are the agent briefing + sandbox config
+references/
+CLAUDE.md
+.claude/
