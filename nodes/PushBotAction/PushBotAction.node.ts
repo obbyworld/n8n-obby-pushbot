@@ -37,7 +37,7 @@ import type { BotToolsStep, BotToolsWorkflow } from '../shared/types';
  */
 export class PushBotAction implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'obbyircd PushBot Action',
+		displayName: 'Obby PushBot Action',
 		name: 'pushBotAction',
 		icon: 'file:obby.png',
 		group: ['output'],

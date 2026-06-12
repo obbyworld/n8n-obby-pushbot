@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-obby-pushbot",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community node for obbyircd PushBot — register a bot, receive slash commands & events, and reply, all over the PushBot webhook+REST transport.",
   "keywords": [
     "n8n-community-node-package",

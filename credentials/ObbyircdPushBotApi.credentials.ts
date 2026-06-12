@@ -16,7 +16,7 @@ import type {
 export class ObbyircdPushBotApi implements ICredentialType {
 	name = 'obbyircdPushBotApi';
 
-	displayName = 'obbyircd PushBot API';
+	displayName = 'Obby PushBot API';
 
 	icon = 'file:obby.png' as const;
 
