@@ -66,9 +66,9 @@ function subscriptionKey(t: string): string {
  */
 export class PushBotTrigger implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'PushBot Event',
+		displayName: 'obbyircd PushBot Event',
 		name: 'pushBotTrigger',
-		icon: 'file:pushbot.svg',
+		icon: 'file:obby.png',
 		group: ['trigger'],
 		version: 1,
 		subtitle: '={{ "webhook: " + $parameter["path"] }}',

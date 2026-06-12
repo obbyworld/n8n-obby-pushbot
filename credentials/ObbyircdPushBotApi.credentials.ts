@@ -18,6 +18,8 @@ export class ObbyircdPushBotApi implements ICredentialType {
 
 	displayName = 'obbyircd PushBot API';
 
+	icon = 'file:obby.png' as const;
+
 	documentationUrl = 'https://github.com/obbyworld/n8n-obby-pushbot#readme';
 
 	properties: INodeProperties[] = [

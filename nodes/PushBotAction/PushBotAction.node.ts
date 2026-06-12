@@ -37,9 +37,9 @@ import type { BotToolsStep, BotToolsWorkflow } from '../shared/types';
  */
 export class PushBotAction implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'PushBot Respond / Send / Manage',
+		displayName: 'obbyircd PushBot Action',
 		name: 'pushBotAction',
-		icon: 'file:pushbot.svg',
+		icon: 'file:obby.png',
 		group: ['output'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',

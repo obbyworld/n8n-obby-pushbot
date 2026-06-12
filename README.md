@@ -25,11 +25,8 @@ Both read everything they need from one credential — you never touch a
 
 ### From GitHub (works today — no npm publish needed)
 
-Install it as a **custom extension**, into `~/.n8n/custom` — the directory n8n
-auto-scans for locally-developed nodes. (Do **not** use `~/.n8n/nodes`: that
-location only loads packages that were installed through n8n's GUI Community
-Nodes installer, which records them in the database. A raw `npm install` there
-leaves the files on disk but n8n never loads them.)
+Install it as a **custom extension** into `~/.n8n/custom`, the directory n8n
+auto-scans for locally-developed nodes:
 
 ```bash
 mkdir -p ~/.n8n/custom && cd ~/.n8n/custom
@@ -39,9 +36,14 @@ npm install github:obbyworld/n8n-obby-pushbot
 ```
 
 The package builds itself on install (via the `prepare` hook). After restarting
-n8n and hard-refreshing the editor, the two nodes appear in the **node panel**
-(search "PushBot"). Note: custom nodes show up in the palette, **not** in
-Settings → Community Nodes — that list is only for GUI/npm-installed packages.
+n8n and hard-refreshing the editor, the nodes appear in the **node panel** —
+search **"Obby"** or "PushBot". They load into the palette, **not** Settings →
+Community Nodes (that list only tracks packages installed through n8n's GUI).
+
+> **Don't also install it into `~/.n8n/nodes`.** n8n loads it from there too (via
+> that folder's `package.json`), so having it in both places makes every node
+> appear twice. Pick one location — `~/.n8n/custom` is the clean choice for an
+> unpublished node.
 
 > Node version: n8n 2.15+ needs **Node ≥ 22.16**. If `node -v` shows older,
 > select a newer one (e.g. `nvm use 22`) in the shell that launches n8n.
